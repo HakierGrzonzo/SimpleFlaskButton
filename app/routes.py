@@ -1,5 +1,6 @@
 from app import app
-from flask import render_template, request
+from flask import render_template, request, send_from_directory
+import os
 
 osoby = list()
 
@@ -8,6 +9,10 @@ osoby = list()
 def index():
     return render_template('index.html')
 
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'),
+                               'favicon.ico', mimetype='image/vnd.microsoft.icon')
 @app.route('/gra')
 def gra():
     global osoby

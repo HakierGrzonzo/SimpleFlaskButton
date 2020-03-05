@@ -17,6 +17,10 @@ div {
 p {
   margin: 30px;
 }
+li {
+  width:80%;
+  margin-top: 15px;
+}
 h1 {
   font-size: 3em;
   text-align: center;
@@ -47,4 +51,42 @@ input {
   display: block;
   margin-right: auto;
   margin-left: auto;
+}
+.center-block-big {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 50px;
+}
+blockquote {
+  background:#EDEDED;
+  border-left:8px solid #008FEA;
+  box-shadow:0 3px 15px rgba(0,0,0,.15);
+  color:#666;
+  font-size:1.1em;
+  font-style:italic;
+  font-weight:300;
+  line-height:1.6;
+  margin:50px auto;
+  padding:1.2em 30px 1.2em 75px;
+  position:relative;
+  vertical-align:super;
+  width:30%;
+  z-index: 0;
+  overflow: hidden;
+}
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  padding-top: 30px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 30px;
+  border: 2px solid green;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-left: 60px;
+  margin-right: auto;
 }
